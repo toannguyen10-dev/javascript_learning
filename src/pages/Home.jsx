@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import ModuleCard from '../components/ModuleCard';
-import { FaCode, FaJsSquare, FaBox, FaRocket } from 'react-icons/fa';
+import { FaCode, FaJsSquare, FaBox, FaRocket, FaGlobe } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -20,11 +20,11 @@ const Home = () => {
         </p>
         <div className="flex items-center justify-center space-x-8 mt-8">
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-600">3</div>
+            <div className="text-4xl font-bold text-blue-600">4</div>
             <div className="text-gray-600">Modules</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-green-600">30+</div>
+            <div className="text-4xl font-bold text-green-600">60+</div>
             <div className="text-gray-600">Bài tập</div>
           </div>
           <div className="text-center">
@@ -35,7 +35,7 @@ const Home = () => {
       </motion.div>
 
       {/* Modules */}
-      <div className="grid md:grid-cols-3 gap-8 mb-12">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
         <ModuleCard
           icon={FaCode}
           title="Event Loop & Async"
@@ -64,6 +64,16 @@ const Home = () => {
           quizLink="/quiz/bundling"
           color="from-green-500 to-teal-600"
           delay={0.3}
+        />
+        
+        <ModuleCard
+          icon={FaGlobe}
+          title="Browser Compatibility"
+          description="Tìm hiểu các JavaScript functions tương thích với trình duyệt từ năm nào - Chrome, Firefox, Safari, Edge"
+          link="/browser-compatibility"
+          quizLink="/quiz/browser-compatibility"
+          color="from-purple-500 to-pink-600"
+          delay={0.4}
         />
       </div>
 

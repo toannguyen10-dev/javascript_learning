@@ -1,7 +1,7 @@
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import QuizComponent from '../components/QuizComponent';
-import { eventLoopQuiz, esFeaturesQuiz, bundlingQuiz } from '../data/quizzes';
+import { eventLoopQuiz, esFeaturesQuiz, bundlingQuiz, browserCompatibilityQuiz } from '../data/quizzes';
 import { FaArrowLeft } from 'react-icons/fa';
 
 const Quiz = () => {
@@ -22,6 +22,11 @@ const Quiz = () => {
       title: 'Quiz: Bundling & Setup',
       questions: bundlingQuiz,
       backLink: '/bundling'
+    },
+    'browser-compatibility': {
+      title: 'Quiz: Browser Compatibility',
+      questions: browserCompatibilityQuiz,
+      backLink: '/browser-compatibility'
     }
   };
 

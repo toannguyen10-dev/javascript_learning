@@ -337,3 +337,402 @@ export const bundlingQuiz = [
   }
 ];
 
+export const browserCompatibilityQuiz = [
+  {
+    question: "Arrow functions được hỗ trợ sớm nhất bởi trình duyệt nào?",
+    options: [
+      "Chrome",
+      "Firefox (2013)",
+      "Safari",
+      "Edge"
+    ],
+    correctAnswer: 1,
+    explanation: "Arrow functions được Firefox hỗ trợ sớm nhất vào năm 2013, trước khi ES2015 chính thức ra mắt."
+  },
+  {
+    question: "let và const được hỗ trợ rộng rãi bởi các trình duyệt chính từ năm nào?",
+    options: [
+      "2014",
+      "2015",
+      "2015-2016",
+      "2017"
+    ],
+    correctAnswer: 2,
+    explanation: "let và const được hỗ trợ rộng rãi từ 2015-2016. Edge hỗ trợ sớm nhất (2015), các browser khác vào 2016."
+  },
+  {
+    question: "Template literals được Firefox hỗ trợ từ năm nào?",
+    options: [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    correctAnswer: 1,
+    explanation: "Template literals được Firefox hỗ trợ sớm nhất vào năm 2014, trước khi ES2015 chính thức ra mắt."
+  },
+  {
+    question: "Promises được hỗ trợ đồng loạt bởi Chrome, Firefox, Safari từ năm nào?",
+    options: [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    correctAnswer: 1,
+    explanation: "Promises được Chrome, Firefox, Safari hỗ trợ vào năm 2014, Edge vào 2015."
+  },
+  {
+    question: "Async/await được Chrome và Edge hỗ trợ từ năm nào?",
+    options: [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    correctAnswer: 1,
+    explanation: "Async/await được Chrome (v55) và Edge (v14) hỗ trợ sớm nhất vào năm 2016, Firefox và Safari vào 2017."
+  },
+  {
+    question: "Array.includes() được hỗ trợ sớm nhất bởi các trình duyệt từ năm nào?",
+    options: [
+      "2014",
+      "2015",
+      "2016",
+      "2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.includes() được Chrome, Firefox, Safari hỗ trợ vào năm 2015, Edge vào 2016."
+  },
+  {
+    question: "Optional chaining (?.) được hỗ trợ đồng loạt bởi tất cả trình duyệt chính từ năm nào?",
+    options: [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    correctAnswer: 1,
+    explanation: "Optional chaining được hỗ trợ đồng loạt vào năm 2020: Chrome 80, Firefox 74, Safari 13.1, Edge 80."
+  },
+  {
+    question: "Nullish coalescing operator (??) được hỗ trợ từ năm nào?",
+    options: [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    correctAnswer: 1,
+    explanation: "Nullish coalescing được hỗ trợ đồng loạt vào năm 2020: Chrome 80, Firefox 72, Safari 13.1, Edge 80."
+  },
+  {
+    question: "BigInt được Chrome hỗ trợ từ năm nào?",
+    options: [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    correctAnswer: 1,
+    explanation: "BigInt được Chrome hỗ trợ sớm nhất vào năm 2018 (v67), Firefox vào 2019, Safari và Edge vào 2020."
+  },
+  {
+    question: "Array.flat() và flatMap() được hỗ trợ sớm nhất bởi các trình duyệt từ năm nào?",
+    options: [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.flat/flatMap được Chrome, Firefox, Safari hỗ trợ vào năm 2018, Edge vào 2020."
+  },
+  {
+    question: "String.replaceAll() được hỗ trợ đồng loạt từ năm nào?",
+    options: [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    correctAnswer: 1,
+    explanation: "String.replaceAll() được hỗ trợ đồng loạt vào năm 2020: Chrome 85, Firefox 77, Safari 13.1, Edge 85."
+  },
+  {
+    question: "Top-level await được hỗ trợ đồng loạt từ năm nào?",
+    options: [
+      "2020",
+      "2021",
+      "2022",
+      "2023"
+    ],
+    correctAnswer: 1,
+    explanation: "Top-level await được hỗ trợ đồng loạt vào năm 2021: Chrome 89, Firefox 89, Safari 15, Edge 89."
+  },
+  {
+    question: "Class private fields (#) được Chrome hỗ trợ từ năm nào?",
+    options: [
+      "2018",
+      "2019",
+      "2020",
+      "2021"
+    ],
+    correctAnswer: 1,
+    explanation: "Class private fields được Chrome hỗ trợ sớm nhất vào năm 2019 (v74), Firefox vào 2021, Safari và Edge vào 2020-2021."
+  },
+  {
+    question: "Array.findLast() và findLastIndex() được hỗ trợ từ năm nào?",
+    options: [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.findLast/findLastIndex được hỗ trợ đồng loạt vào năm 2022: Chrome 97, Firefox 104, Safari 15.4, Edge 97."
+  },
+  {
+    question: "Array.toSorted() và toReversed() được Safari hỗ trợ từ năm nào?",
+    options: [
+      "2021",
+      "2022",
+      "2023",
+      "2024"
+    ],
+    correctAnswer: 1,
+    explanation: "Immutable array methods được Safari hỗ trợ sớm nhất vào năm 2022 (v16), Chrome, Firefox, Edge vào 2023."
+  },
+  {
+    question: "Object.entries() và Object.values() được hỗ trợ từ năm nào?",
+    options: [
+      "2015",
+      "2016",
+      "2016-2017",
+      "2018"
+    ],
+    correctAnswer: 2,
+    explanation: "Object.entries/values được Chrome và Firefox hỗ trợ vào 2016, Safari vào 2017, Edge vào 2016."
+  },
+  {
+    question: "Destructuring được Safari hỗ trợ từ năm nào?",
+    options: [
+      "2013",
+      "2014",
+      "2015",
+      "2016"
+    ],
+    correctAnswer: 1,
+    explanation: "Destructuring được Safari hỗ trợ sớm nhất vào năm 2014 (v8), Firefox vào 2015, Chrome và Edge vào 2016."
+  },
+  {
+    question: "Classes được hỗ trợ đồng loạt bởi tất cả trình duyệt chính từ năm nào?",
+    options: [
+      "2015",
+      "2016",
+      "2017",
+      "2018"
+    ],
+    correctAnswer: 1,
+    explanation: "Classes được hỗ trợ đồng loạt vào năm 2016: Chrome 49, Firefox 45, Safari 10, Edge 13."
+  },
+  {
+    question: "Nếu bạn cần hỗ trợ Optional chaining (?.) cho tất cả trình duyệt, bạn nên target từ năm nào?",
+    options: [
+      "2019",
+      "2020",
+      "2021",
+      "2022"
+    ],
+    correctAnswer: 1,
+    explanation: "Optional chaining được hỗ trợ đồng loạt từ năm 2020, nên bạn nên target từ năm này để đảm bảo tương thích."
+  },
+  {
+    question: "Để sử dụng async/await mà vẫn hỗ trợ trình duyệt cũ (trước 2016), bạn cần làm gì?",
+    options: [
+      "Không cần làm gì, async/await tự động tương thích",
+      "Sử dụng Babel để transpile về Promise",
+      "Chỉ dùng Promise, không dùng async/await",
+      "Cập nhật trình duyệt"
+    ],
+    correctAnswer: 1,
+    explanation: "Để hỗ trợ trình duyệt cũ, bạn cần sử dụng Babel để transpile async/await về Promise và generator functions."
+  },
+  {
+    question: "Template literals được Chrome hỗ trợ từ phiên bản nào?",
+    options: [
+      "Chrome 40",
+      "Chrome 41",
+      "Chrome 42",
+      "Chrome 43"
+    ],
+    correctAnswer: 1,
+    explanation: "Template literals được Chrome hỗ trợ từ phiên bản 41, phát hành vào năm 2015."
+  },
+  {
+    question: "Firefox hỗ trợ arrow functions từ phiên bản nào?",
+    options: [
+      "Firefox 20",
+      "Firefox 21",
+      "Firefox 22",
+      "Firefox 23"
+    ],
+    correctAnswer: 2,
+    explanation: "Firefox hỗ trợ arrow functions từ phiên bản 22, phát hành vào năm 2013."
+  },
+  {
+    question: "Safari hỗ trợ let và const từ phiên bản nào?",
+    options: [
+      "Safari 8",
+      "Safari 9",
+      "Safari 10",
+      "Safari 11"
+    ],
+    correctAnswer: 2,
+    explanation: "Safari hỗ trợ let và const từ phiên bản 10, phát hành vào năm 2016."
+  },
+  {
+    question: "Edge hỗ trợ Promises từ phiên bản nào?",
+    options: [
+      "Edge 11",
+      "Edge 12",
+      "Edge 13",
+      "Edge 14"
+    ],
+    correctAnswer: 1,
+    explanation: "Edge hỗ trợ Promises từ phiên bản 12, phát hành vào năm 2015."
+  },
+  {
+    question: "Chrome hỗ trợ BigInt từ phiên bản nào?",
+    options: [
+      "Chrome 65",
+      "Chrome 66",
+      "Chrome 67",
+      "Chrome 68"
+    ],
+    correctAnswer: 2,
+    explanation: "Chrome hỗ trợ BigInt từ phiên bản 67, phát hành vào năm 2018."
+  },
+  {
+    question: "Array.flat() được Firefox hỗ trợ từ phiên bản nào?",
+    options: [
+      "Firefox 60",
+      "Firefox 61",
+      "Firefox 62",
+      "Firefox 63"
+    ],
+    correctAnswer: 2,
+    explanation: "Array.flat() được Firefox hỗ trợ từ phiên bản 62, phát hành vào năm 2018."
+  },
+  {
+    question: "Safari hỗ trợ Optional chaining từ phiên bản nào?",
+    options: [
+      "Safari 12.1",
+      "Safari 13",
+      "Safari 13.1",
+      "Safari 14"
+    ],
+    correctAnswer: 2,
+    explanation: "Safari hỗ trợ Optional chaining từ phiên bản 13.1, phát hành vào năm 2020."
+  },
+  {
+    question: "Top-level await được Edge hỗ trợ từ phiên bản nào?",
+    options: [
+      "Edge 87",
+      "Edge 88",
+      "Edge 89",
+      "Edge 90"
+    ],
+    correctAnswer: 2,
+    explanation: "Top-level await được Edge hỗ trợ từ phiên bản 89, phát hành vào năm 2021."
+  },
+  {
+    question: "Class private fields được Firefox hỗ trợ từ phiên bản nào?",
+    options: [
+      "Firefox 88",
+      "Firefox 89",
+      "Firefox 90",
+      "Firefox 91"
+    ],
+    correctAnswer: 2,
+    explanation: "Class private fields được Firefox hỗ trợ từ phiên bản 90, phát hành vào năm 2021."
+  },
+  {
+    question: "Array.findLast() được Chrome hỗ trợ từ phiên bản nào?",
+    options: [
+      "Chrome 95",
+      "Chrome 96",
+      "Chrome 97",
+      "Chrome 98"
+    ],
+    correctAnswer: 2,
+    explanation: "Array.findLast() được Chrome hỗ trợ từ phiên bản 97, phát hành vào năm 2022."
+  },
+  {
+    question: "Array.toSorted() được Safari hỗ trợ từ phiên bản nào?",
+    options: [
+      "Safari 14",
+      "Safari 15",
+      "Safari 16",
+      "Safari 17"
+    ],
+    correctAnswer: 2,
+    explanation: "Array.toSorted() được Safari hỗ trợ từ phiên bản 16, phát hành vào năm 2022."
+  },
+  {
+    question: "Nếu bạn cần hỗ trợ Array.flat() cho tất cả trình duyệt, bạn nên target từ năm nào?",
+    options: [
+      "2017",
+      "2018",
+      "2019",
+      "2020"
+    ],
+    correctAnswer: 3,
+    explanation: "Array.flat() được hỗ trợ rộng rãi từ 2018, nhưng Edge chỉ hỗ trợ từ 2020, nên nên target từ 2020 để đảm bảo tương thích đầy đủ."
+  },
+  {
+    question: "Để kiểm tra tương thích chi tiết của một tính năng JavaScript, bạn nên sử dụng công cụ nào?",
+    options: [
+      "MDN Web Docs",
+      "caniuse.com",
+      "JavaScript.info",
+      "Tất cả các công cụ trên"
+    ],
+    correctAnswer: 3,
+    explanation: "Cả ba công cụ đều hữu ích: caniuse.com cho browser compatibility, MDN cho documentation, JavaScript.info cho tutorials."
+  },
+  {
+    question: "Tính năng nào được hỗ trợ sớm nhất bởi Firefox (2013)?",
+    options: [
+      "let và const",
+      "Arrow functions",
+      "Classes",
+      "Promises"
+    ],
+    correctAnswer: 1,
+    explanation: "Arrow functions được Firefox hỗ trợ sớm nhất vào năm 2013, trước khi ES2015 chính thức ra mắt."
+  },
+  {
+    question: "Tính năng nào được Chrome hỗ trợ sớm nhất (2018)?",
+    options: [
+      "BigInt",
+      "Optional chaining",
+      "Top-level await",
+      "Class private fields"
+    ],
+    correctAnswer: 0,
+    explanation: "BigInt được Chrome hỗ trợ sớm nhất vào năm 2018 (v67), trước các tính năng ES2020 khác."
+  },
+  {
+    question: "Tính năng nào được Safari hỗ trợ sớm nhất (2014)?",
+    options: [
+      "Destructuring",
+      "Template literals",
+      "Promises",
+      "Array.includes"
+    ],
+    correctAnswer: 0,
+    explanation: "Destructuring được Safari hỗ trợ sớm nhất vào năm 2014 (v8), trước các tính năng ES2015 khác."
+  }
+];
+
