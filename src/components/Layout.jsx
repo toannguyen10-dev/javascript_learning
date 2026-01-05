@@ -10,6 +10,7 @@ const Layout = ({ children }) => {
     { path: '/event-loop', icon: FaCode, label: 'Event Loop' },
     { path: '/es-features', icon: FaJsSquare, label: 'ES Features' },
     { path: '/bundling', icon: FaBox, label: 'Bundling' },
+    { path: '/browser-compatibility', icon: FaBrowser, label: 'Browser Compatibility' },
   ];
 
   return (
