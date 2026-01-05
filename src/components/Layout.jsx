@@ -1,6 +1,6 @@
 import { Link, useLocation } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaHome, FaCode, FaJsSquare, FaBox } from 'react-icons/fa';
+import { FaHome, FaCode, FaJsSquare, FaBox, FaGlobe } from 'react-icons/fa';
 
 const Layout = ({ children }) => {
   const location = useLocation();
@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
     { path: '/event-loop', icon: FaCode, label: 'Event Loop' },
     { path: '/es-features', icon: FaJsSquare, label: 'ES Features' },
     { path: '/bundling', icon: FaBox, label: 'Bundling' },
-    { path: '/browser-compatibility', icon: FaBrowser, label: 'Browser Compatibility' },
+    { path: '/browser-compatibility', icon: FaGlobe, label: 'Browser Compatibility' },
   ];
 
   return (
