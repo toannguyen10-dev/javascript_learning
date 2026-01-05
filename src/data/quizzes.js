@@ -221,6 +221,567 @@ export const esFeaturesQuiz = [
     ],
     correctAnswer: 2,
     explanation: "Top-level await (await ngoài async function trong module) được hỗ trợ từ ES2022."
+  },
+  {
+    question: "Template literals được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Template literals được giới thiệu trong ES2015 (ES6), cho phép nhúng biến và biểu thức vào chuỗi."
+  },
+  {
+    question: "Destructuring được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Destructuring được giới thiệu trong ES2015 (ES6), cho phép tách giá trị từ array hoặc object."
+  },
+  {
+    question: "Classes được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Classes được giới thiệu trong ES2015 (ES6), cung cấp cú pháp để tạo class và kế thừa."
+  },
+  {
+    question: "Default parameters được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Default parameters được giới thiệu trong ES2015 (ES6), cho phép đặt giá trị mặc định cho tham số hàm."
+  },
+  {
+    question: "Spread operator (...) được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Spread operator được giới thiệu trong ES2015 (ES6), dùng để copy array, merge object, hoặc truyền arguments."
+  },
+  {
+    question: "Enhanced object literals được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Enhanced object literals được giới thiệu trong ES2015 (ES6), cho phép viết object ngắn gọn hơn với shorthand syntax."
+  },
+  {
+    question: "Modules (import/export) được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "ES6 Modules với import/export được giới thiệu trong ES2015 (ES6), cho phép tách code thành nhiều file."
+  },
+  {
+    question: "Promises được thêm vào ES nào?",
+    options: [
+      "ES2014",
+      "ES2015 (ES6)",
+      "ES2016",
+      "ES2017"
+    ],
+    correctAnswer: 1,
+    explanation: "Promises được giới thiệu trong ES2015 (ES6), cung cấp cách xử lý async code tốt hơn callback."
+  },
+  {
+    question: "Array.includes() được thêm vào ES nào?",
+    options: [
+      "ES2015",
+      "ES2016 (ES7)",
+      "ES2017",
+      "ES2018"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.includes() được giới thiệu trong ES2016 (ES7), kiểm tra phần tử có trong array."
+  },
+  {
+    question: "Object.entries() được thêm vào ES nào?",
+    options: [
+      "ES2016",
+      "ES2017 (ES8)",
+      "ES2018",
+      "ES2019"
+    ],
+    correctAnswer: 1,
+    explanation: "Object.entries() được giới thiệu trong ES2017 (ES8), trả về array các cặp [key, value]."
+  },
+  {
+    question: "Object.values() được thêm vào ES nào?",
+    options: [
+      "ES2016",
+      "ES2017 (ES8)",
+      "ES2018",
+      "ES2019"
+    ],
+    correctAnswer: 1,
+    explanation: "Object.values() được giới thiệu trong ES2017 (ES8), trả về array các giá trị của object."
+  },
+  {
+    question: "String.padStart() và padEnd() được thêm vào ES nào?",
+    options: [
+      "ES2016",
+      "ES2017 (ES8)",
+      "ES2018",
+      "ES2019"
+    ],
+    correctAnswer: 1,
+    explanation: "String padding methods được giới thiệu trong ES2017 (ES8), để thêm ký tự vào đầu hoặc cuối chuỗi."
+  },
+  {
+    question: "Object spread ({...obj}) được thêm vào ES nào?",
+    options: [
+      "ES2017",
+      "ES2018 (ES9)",
+      "ES2019",
+      "ES2020"
+    ],
+    correctAnswer: 1,
+    explanation: "Object spread/rest được giới thiệu trong ES2018 (ES9), cho phép copy và merge object."
+  },
+  {
+    question: "Promise.finally() được thêm vào ES nào?",
+    options: [
+      "ES2017",
+      "ES2018 (ES9)",
+      "ES2019",
+      "ES2020"
+    ],
+    correctAnswer: 1,
+    explanation: "Promise.finally() được giới thiệu trong ES2018 (ES9), thực thi code sau khi Promise settled (fulfilled hoặc rejected)."
+  },
+  {
+    question: "for-await-of được thêm vào ES nào?",
+    options: [
+      "ES2017",
+      "ES2018 (ES9)",
+      "ES2019",
+      "ES2020"
+    ],
+    correctAnswer: 1,
+    explanation: "Asynchronous iteration (for-await-of) được giới thiệu trong ES2018 (ES9), cho phép iterate qua async iterable."
+  },
+  {
+    question: "Array.flatMap() được thêm vào ES nào?",
+    options: [
+      "ES2018",
+      "ES2019 (ES10)",
+      "ES2020",
+      "ES2021"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.flatMap() được giới thiệu trong ES2019 (ES10), kết hợp map() và flat() trong một method."
+  },
+  {
+    question: "Object.fromEntries() được thêm vào ES nào?",
+    options: [
+      "ES2018",
+      "ES2019 (ES10)",
+      "ES2020",
+      "ES2021"
+    ],
+    correctAnswer: 1,
+    explanation: "Object.fromEntries() được giới thiệu trong ES2019 (ES10), chuyển array entries thành object (ngược lại với Object.entries())."
+  },
+  {
+    question: "String.trimStart() và trimEnd() được thêm vào ES nào?",
+    options: [
+      "ES2018",
+      "ES2019 (ES10)",
+      "ES2020",
+      "ES2021"
+    ],
+    correctAnswer: 1,
+    explanation: "String.trimStart() và trimEnd() được giới thiệu trong ES2019 (ES10), xóa khoảng trắng ở đầu hoặc cuối chuỗi."
+  },
+  {
+    question: "Optional catch binding (catch {} không cần param) được thêm vào ES nào?",
+    options: [
+      "ES2018",
+      "ES2019 (ES10)",
+      "ES2020",
+      "ES2021"
+    ],
+    correctAnswer: 1,
+    explanation: "Optional catch binding được giới thiệu trong ES2019 (ES10), cho phép catch block không cần parameter nếu không sử dụng."
+  },
+  {
+    question: "Dynamic import() được thêm vào ES nào?",
+    options: [
+      "ES2019",
+      "ES2020 (ES11)",
+      "ES2021",
+      "ES2022"
+    ],
+    correctAnswer: 1,
+    explanation: "Dynamic import được giới thiệu trong ES2020 (ES11), cho phép import module động trong runtime."
+  },
+  {
+    question: "globalThis được thêm vào ES nào?",
+    options: [
+      "ES2019",
+      "ES2020 (ES11)",
+      "ES2021",
+      "ES2022"
+    ],
+    correctAnswer: 1,
+    explanation: "globalThis được giới thiệu trong ES2020 (ES11), là cách thống nhất để truy cập global object ở mọi môi trường."
+  },
+  {
+    question: "String.replaceAll() được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021 (ES12)",
+      "ES2022",
+      "ES2023"
+    ],
+    correctAnswer: 1,
+    explanation: "String.replaceAll() được giới thiệu trong ES2021 (ES12), thay thế tất cả occurrence của substring."
+  },
+  {
+    question: "Logical assignment operators (&&=, ||=, ??=) được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021 (ES12)",
+      "ES2022",
+      "ES2023"
+    ],
+    correctAnswer: 1,
+    explanation: "Logical assignment operators được giới thiệu trong ES2021 (ES12), kết hợp logical operators với assignment."
+  },
+  {
+    question: "Numeric separators (1_000_000) được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021 (ES12)",
+      "ES2022",
+      "ES2023"
+    ],
+    correctAnswer: 1,
+    explanation: "Numeric separators được giới thiệu trong ES2021 (ES12), dùng underscore để làm số dễ đọc hơn."
+  },
+  {
+    question: "Promise.any() được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021 (ES12)",
+      "ES2022",
+      "ES2023"
+    ],
+    correctAnswer: 1,
+    explanation: "Promise.any() được giới thiệu trong ES2021 (ES12), trả về Promise đầu tiên resolve thành công."
+  },
+  {
+    question: "Class private fields (#private) được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021",
+      "ES2022 (ES13)",
+      "ES2023"
+    ],
+    correctAnswer: 2,
+    explanation: "Class private fields với ký tự # được giới thiệu trong ES2022 (ES13), cho phép tạo private fields và methods."
+  },
+  {
+    question: "Object.hasOwn() được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021",
+      "ES2022 (ES13)",
+      "ES2023"
+    ],
+    correctAnswer: 2,
+    explanation: "Object.hasOwn() được giới thiệu trong ES2022 (ES13), thay thế Object.prototype.hasOwnProperty() an toàn hơn."
+  },
+  {
+    question: "Error.cause được thêm vào ES nào?",
+    options: [
+      "ES2020",
+      "ES2021",
+      "ES2022 (ES13)",
+      "ES2023"
+    ],
+    correctAnswer: 2,
+    explanation: "Error.cause được giới thiệu trong ES2022 (ES13), cho phép thêm nguyên nhân gốc (original error) vào error chain."
+  },
+  {
+    question: "Array.findLast() và findLastIndex() được thêm vào ES nào?",
+    options: [
+      "ES2021",
+      "ES2022",
+      "ES2023 (ES14)",
+      "ES2024"
+    ],
+    correctAnswer: 2,
+    explanation: "Array.findLast() và findLastIndex() được giới thiệu trong ES2023 (ES14), tìm phần tử từ cuối mảng."
+  },
+  {
+    question: "Array.toSorted(), toReversed(), toSpliced() được thêm vào ES nào?",
+    options: [
+      "ES2021",
+      "ES2022",
+      "ES2023 (ES14)",
+      "ES2024"
+    ],
+    correctAnswer: 2,
+    explanation: "Immutable array methods được giới thiệu trong ES2023 (ES14), tạo mảng mới thay vì mutate mảng gốc."
+  },
+  {
+    question: "Kết quả của: const arr = [1, 2, 3]; const [a, b] = arr; console.log(a, b);",
+    options: [
+      "1 2",
+      "1 2 3",
+      "[1, 2] [2, 3]",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "Destructuring assignment tách phần tử đầu tiên vào a (1), phần tử thứ hai vào b (2)."
+  },
+  {
+    question: "Kết quả của: const obj = {x: 1, y: 2}; const {x, z = 3} = obj; console.log(x, z);",
+    options: [
+      "1 undefined",
+      "1 3",
+      "1 2",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Destructuring với default value: x = 1, z không tồn tại trong obj nên dùng giá trị mặc định 3."
+  },
+  {
+    question: "Kết quả của: const arr1 = [1, 2]; const arr2 = [...arr1, 3]; console.log(arr2);",
+    options: [
+      "[1, 2, 3]",
+      "[1, 2]",
+      "[3, 1, 2]",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "Spread operator copy arr1 và thêm 3 vào cuối, kết quả là [1, 2, 3]."
+  },
+  {
+    question: "Kết quả của: const x = null ?? 'default'; console.log(x);",
+    options: [
+      "null",
+      "'default'",
+      "undefined",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Nullish coalescing (??) trả về giá trị bên phải khi bên trái là null hoặc undefined."
+  },
+  {
+    question: "Kết quả của: const x = 0 ?? 'default'; console.log(x);",
+    options: [
+      "0",
+      "'default'",
+      "null",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "Nullish coalescing chỉ kiểm tra null/undefined, 0 là giá trị hợp lệ nên trả về 0."
+  },
+  {
+    question: "Kết quả của: const user = null; console.log(user?.name);",
+    options: [
+      "null",
+      "undefined",
+      "Lỗi",
+      "'undefined'"
+    ],
+    correctAnswer: 1,
+    explanation: "Optional chaining (?.) trả về undefined khi object là null hoặc undefined, không throw error."
+  },
+  {
+    question: "Kết quả của: [1, [2, [3]]].flat(2);",
+    options: [
+      "[1, 2, 3]",
+      "[1, [2, 3]]",
+      "[1, 2, [3]]",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "Array.flat(2) làm phẳng mảng 2 cấp độ, kết quả là [1, 2, 3]."
+  },
+  {
+    question: "Kết quả của: Object.fromEntries([['a', 1], ['b', 2]]);",
+    options: [
+      "{a: 1, b: 2}",
+      "[{a: 1}, {b: 2}]",
+      "['a', 'b']",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "Object.fromEntries() chuyển array entries thành object: {a: 1, b: 2}."
+  },
+  {
+    question: "Kết quả của: 'hello world'.replaceAll('world', 'JS');",
+    options: [
+      "'hello JS'",
+      "'hello world'",
+      "'hello JS JS'",
+      "Lỗi"
+    ],
+    correctAnswer: 0,
+    explanation: "String.replaceAll() thay thế tất cả occurrence của 'world' bằng 'JS'."
+  },
+  {
+    question: "Kết quả của: let x = 1; x &&= 2; console.log(x);",
+    options: [
+      "1",
+      "2",
+      "true",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Logical assignment (&&=): x &&= 2 tương đương x = x && 2, vì x = 1 (truthy) nên x = 2."
+  },
+  {
+    question: "Kết quả của: let x; x ??= 10; console.log(x);",
+    options: [
+      "undefined",
+      "10",
+      "null",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Nullish coalescing assignment (??=): x ??= 10 gán 10 nếu x là null hoặc undefined."
+  },
+  {
+    question: "Kết quả của: const arr = [1, 2, 3, 4, 5]; arr.findLast(x => x > 3);",
+    options: [
+      "4",
+      "5",
+      "undefined",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.findLast() tìm từ cuối mảng, phần tử đầu tiên > 3 từ cuối là 5."
+  },
+  {
+    question: "Kết quả của: const arr = [3, 1, 4]; arr.toSorted(); arr;",
+    options: [
+      "[1, 3, 4]",
+      "[3, 1, 4]",
+      "[4, 3, 1]",
+      "Lỗi"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.toSorted() trả về mảng mới đã sort, không mutate mảng gốc. arr vẫn là [3, 1, 4]."
+  },
+  {
+    question: "const nào sau đây khai báo đúng block scope?",
+    options: [
+      "var x = 1;",
+      "let x = 1;",
+      "function x() {}",
+      "x = 1;"
+    ],
+    correctAnswer: 1,
+    explanation: "let và const có block scope, var có function/global scope."
+  },
+  {
+    question: "Arrow function nào sau đây là đúng?",
+    options: [
+      "function(x) => x * 2",
+      "x => x * 2",
+      "(x) -> x * 2",
+      "arrow x => x * 2"
+    ],
+    correctAnswer: 1,
+    explanation: "Cú pháp arrow function: x => x * 2 hoặc (x) => x * 2."
+  },
+  {
+    question: "Template literal nào sau đây là đúng?",
+    options: [
+      "'Hello ${name}'",
+      "\"Hello ${name}\"",
+      "`Hello ${name}`",
+      "'Hello' + name"
+    ],
+    correctAnswer: 2,
+    explanation: "Template literal dùng backticks (`) và ${} để nhúng biến."
+  },
+  {
+    question: "Class private field được khai báo như thế nào?",
+    options: [
+      "private count = 0;",
+      "#count = 0;",
+      "_count = 0;",
+      "this.#count = 0;"
+    ],
+    correctAnswer: 1,
+    explanation: "Class private field trong ES2022 dùng ký tự #: #count = 0;"
+  },
+  {
+    question: "Promise nào trả về tất cả kết quả (kể cả rejected)?",
+    options: [
+      "Promise.all()",
+      "Promise.race()",
+      "Promise.allSettled()",
+      "Promise.any()"
+    ],
+    correctAnswer: 2,
+    explanation: "Promise.allSettled() đợi tất cả Promise settled và trả về tất cả kết quả, kể cả rejected."
+  },
+  {
+    question: "Promise nào trả về Promise đầu tiên resolve thành công?",
+    options: [
+      "Promise.all()",
+      "Promise.race()",
+      "Promise.allSettled()",
+      "Promise.any()"
+    ],
+    correctAnswer: 3,
+    explanation: "Promise.any() (ES2021) trả về Promise đầu tiên resolve thành công, reject nếu tất cả reject."
+  },
+  {
+    question: "Method nào tìm phần tử từ cuối mảng?",
+    options: [
+      "Array.find()",
+      "Array.findLast()",
+      "Array.findIndex()",
+      "Array.lastIndexOf()"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.findLast() (ES2023) tìm phần tử từ cuối mảng thỏa mãn điều kiện."
+  },
+  {
+    question: "Method nào tạo mảng mới đã sort mà không mutate mảng gốc?",
+    options: [
+      "Array.sort()",
+      "Array.toSorted()",
+      "Array.sorted()",
+      "Array.newSort()"
+    ],
+    correctAnswer: 1,
+    explanation: "Array.toSorted() (ES2023) trả về mảng mới đã sort, không thay đổi mảng gốc (immutable)."
   }
 ];
 
