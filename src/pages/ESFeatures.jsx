@@ -294,8 +294,8 @@ const grouped = people.reduce((acc, person) => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-6">
+    <div className="max-w-6xl mx-auto px-2 sm:px-4">
+      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-4 sm:mb-6 text-sm sm:text-base">
         <FaArrowLeft />
         <span>Về trang chủ</span>
       </Link>
@@ -303,24 +303,24 @@ const grouped = people.reduce((acc, person) => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12"
       >
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 bg-clip-text text-transparent mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-yellow-500 via-orange-500 to-red-500 bg-clip-text text-transparent mb-3 sm:mb-4 px-2">
           ES2015 - ES2024 Features
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4">
           Khám phá tất cả tính năng JavaScript từ 2015 đến 2024
         </p>
         
-        <Link to="/quiz/es-features" className="inline-block mt-6">
-          <button className="btn-primary flex items-center space-x-2">
+        <Link to="/quiz/es-features" className="inline-block mt-4 sm:mt-6">
+          <button className="btn-primary flex items-center space-x-2 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
             <FaQuestionCircle />
             <span>Làm bài quiz</span>
           </button>
         </Link>
       </motion.div>
 
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {esVersions.map((version, index) => (
           <motion.div
             key={version.version}
@@ -329,15 +329,15 @@ const grouped = people.reduce((acc, person) => {
             transition={{ delay: index * 0.1 }}
             className="card"
           >
-            <div className={`inline-block bg-gradient-to-r ${version.color} text-white px-6 py-3 rounded-full font-bold text-xl mb-4`}>
+            <div className={`inline-block bg-gradient-to-r ${version.color} text-white px-4 sm:px-6 py-2 sm:py-3 rounded-full font-bold text-base sm:text-lg lg:text-xl mb-3 sm:mb-4`}>
               {version.version} - {version.year}
             </div>
 
-            <div className="grid md:grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 mb-4 sm:mb-6">
               {version.features.map((feature, idx) => (
-                <div key={idx} className="bg-gray-50 rounded-lg p-4 border-l-4 border-blue-500">
-                  <h4 className="font-bold text-gray-800 mb-1">{feature.name}</h4>
-                  <p className="text-gray-600 text-sm">{feature.desc}</p>
+                <div key={idx} className="bg-gray-50 rounded-lg p-3 sm:p-4 border-l-4 border-blue-500">
+                  <h4 className="font-bold text-gray-800 mb-1 text-sm sm:text-base">{feature.name}</h4>
+                  <p className="text-gray-600 text-xs sm:text-sm">{feature.desc}</p>
                 </div>
               ))}
             </div>
@@ -356,69 +356,69 @@ const grouped = people.reduce((acc, person) => {
           transition={{ delay: 1 }}
           className="card"
         >
-          <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center px-2">
             📊 Bảng so sánh tổng hợp
           </h2>
           
-          <div className="overflow-x-auto">
-            <table className="w-full border-collapse">
+          <div className="overflow-x-auto -mx-2 sm:mx-0">
+            <table className="w-full border-collapse min-w-[500px]">
               <thead>
                 <tr className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
-                  <th className="border p-3 text-left">Phiên bản</th>
-                  <th className="border p-3 text-left">Năm</th>
-                  <th className="border p-3 text-left">Feature nổi bật</th>
+                  <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Phiên bản</th>
+                  <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Năm</th>
+                  <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Feature nổi bật</th>
                 </tr>
               </thead>
               <tbody>
                 <tr className="bg-yellow-50">
-                  <td className="border p-3 font-bold">ES2015 (ES6)</td>
-                  <td className="border p-3">2015</td>
-                  <td className="border p-3">let/const, arrow fn, class, Promise, module</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2015 (ES6)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2015</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">let/const, arrow fn, class, Promise, module</td>
                 </tr>
                 <tr className="bg-green-50">
-                  <td className="border p-3 font-bold">ES2016 (ES7)</td>
-                  <td className="border p-3">2016</td>
-                  <td className="border p-3">Array.includes, ** operator</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2016 (ES7)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2016</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Array.includes, ** operator</td>
                 </tr>
                 <tr className="bg-blue-50">
-                  <td className="border p-3 font-bold">ES2017 (ES8)</td>
-                  <td className="border p-3">2017</td>
-                  <td className="border p-3">Async/await, Object.entries/values</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2017 (ES8)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2017</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Async/await, Object.entries/values</td>
                 </tr>
                 <tr className="bg-purple-50">
-                  <td className="border p-3 font-bold">ES2018 (ES9)</td>
-                  <td className="border p-3">2018</td>
-                  <td className="border p-3">Object spread/rest, for-await-of</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2018 (ES9)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2018</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Object spread/rest, for-await-of</td>
                 </tr>
                 <tr className="bg-red-50">
-                  <td className="border p-3 font-bold">ES2019 (ES10)</td>
-                  <td className="border p-3">2019</td>
-                  <td className="border p-3">Array.flat/flatMap, Object.fromEntries</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2019 (ES10)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2019</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Array.flat/flatMap, Object.fromEntries</td>
                 </tr>
                 <tr className="bg-indigo-50">
-                  <td className="border p-3 font-bold">ES2020 (ES11)</td>
-                  <td className="border p-3">2020</td>
-                  <td className="border p-3">BigInt, ??, ?., dynamic import</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2020 (ES11)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2020</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">BigInt, ??, ?., dynamic import</td>
                 </tr>
                 <tr className="bg-teal-50">
-                  <td className="border p-3 font-bold">ES2021 (ES12)</td>
-                  <td className="border p-3">2021</td>
-                  <td className="border p-3">replaceAll, logical assignment, Promise.any</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2021 (ES12)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2021</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">replaceAll, logical assignment, Promise.any</td>
                 </tr>
                 <tr className="bg-orange-50">
-                  <td className="border p-3 font-bold">ES2022 (ES13)</td>
-                  <td className="border p-3">2022</td>
-                  <td className="border p-3">Class private, top-level await</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2022 (ES13)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2022</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Class private, top-level await</td>
                 </tr>
                 <tr className="bg-pink-50">
-                  <td className="border p-3 font-bold">ES2023 (ES14)</td>
-                  <td className="border p-3">2023</td>
-                  <td className="border p-3">findLast, toSorted/toReversed</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2023 (ES14)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2023</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">findLast, toSorted/toReversed</td>
                 </tr>
                 <tr className="bg-cyan-50">
-                  <td className="border p-3 font-bold">ES2024 (ES15)</td>
-                  <td className="border p-3">2024</td>
-                  <td className="border p-3">Temporal API, Array groupBy</td>
+                  <td className="border p-2 sm:p-3 font-bold text-xs sm:text-sm">ES2024 (ES15)</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">2024</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">Temporal API, Array groupBy</td>
                 </tr>
               </tbody>
             </table>
@@ -430,12 +430,12 @@ const grouped = people.reduce((acc, person) => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.1 }}
-          className="card bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white text-center"
+          className="card bg-gradient-to-r from-yellow-400 via-orange-500 to-red-500 text-white text-center p-6 sm:p-8"
         >
-          <h3 className="text-3xl font-bold mb-4">Đã hiểu rõ các tính năng ES?</h3>
-          <p className="text-xl mb-6">Làm bài quiz để kiểm tra kiến thức của bạn!</p>
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">Đã hiểu rõ các tính năng ES?</h3>
+          <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6">Làm bài quiz để kiểm tra kiến thức của bạn!</p>
           <Link to="/quiz/es-features">
-            <button className="bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+            <button className="bg-white text-orange-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg lg:text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Bắt đầu Quiz ngay
             </button>
           </Link>

@@ -51,23 +51,23 @@ const QuizComponent = ({ questions }) => {
         animate={{ opacity: 1, scale: 1 }}
         className="card text-center max-w-2xl mx-auto"
       >
-        <div className={`text-6xl mb-4 ${passed ? 'text-green-500' : 'text-red-500'}`}>
+        <div className={`text-4xl sm:text-5xl lg:text-6xl mb-3 sm:mb-4 ${passed ? 'text-green-500' : 'text-red-500'}`}>
           {passed ? <FaCheckCircle className="mx-auto" /> : <FaTimesCircle className="mx-auto" />}
         </div>
         
-        <h2 className="text-3xl font-bold mb-4">
+        <h2 className="text-2xl sm:text-3xl font-bold mb-3 sm:mb-4 px-2">
           {passed ? 'Xuất sắc! 🎉' : 'Cần cố gắng thêm! 💪'}
         </h2>
         
-        <div className="text-5xl font-bold mb-4 text-blue-600">
+        <div className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-3 sm:mb-4 text-blue-600">
           {score}/{questions.length}
         </div>
         
-        <p className="text-xl text-gray-600 mb-8">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-6 sm:mb-8 px-4">
           Bạn đã trả lời đúng {percentage.toFixed(0)}% câu hỏi
         </p>
 
-        <button onClick={resetQuiz} className="btn-primary flex items-center space-x-2 mx-auto">
+        <button onClick={resetQuiz} className="btn-primary flex items-center justify-center space-x-2 mx-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
           <FaRedo />
           <span>Làm lại</span>
         </button>
@@ -76,10 +76,10 @@ const QuizComponent = ({ questions }) => {
   }
 
   return (
-    <div className="max-w-3xl mx-auto">
+    <div className="max-w-3xl mx-auto px-2 sm:px-0">
       {/* Progress Bar */}
-      <div className="mb-8">
-        <div className="flex justify-between text-sm text-gray-600 mb-2">
+      <div className="mb-4 sm:mb-6 lg:mb-8">
+        <div className="flex justify-between text-xs sm:text-sm text-gray-600 mb-2">
           <span>Câu hỏi {currentQuestion + 1}/{questions.length}</span>
           <span>Điểm: {score}</span>
         </div>
@@ -100,11 +100,11 @@ const QuizComponent = ({ questions }) => {
           exit={{ opacity: 0, x: -50 }}
           className="card"
         >
-          <h3 className="text-2xl font-bold text-gray-800 mb-6">
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-800 mb-4 sm:mb-6 break-words">
             {question.question}
           </h3>
 
-          <div className="space-y-3">
+          <div className="space-y-2 sm:space-y-3">
             {question.options.map((option, index) => {
               let className = 'quiz-option';
               
@@ -126,11 +126,11 @@ const QuizComponent = ({ questions }) => {
                   onClick={() => handleAnswer(index)}
                   className={className}
                 >
-                  <div className="flex items-center">
-                    <span className="font-semibold mr-3 text-blue-600">
+                  <div className="flex items-start sm:items-center">
+                    <span className="font-semibold mr-2 sm:mr-3 text-blue-600 flex-shrink-0 text-sm sm:text-base">
                       {String.fromCharCode(65 + index)}.
                     </span>
-                    <span className="text-gray-800">{option}</span>
+                    <span className="text-sm sm:text-base text-gray-800 break-words">{option}</span>
                   </div>
                 </motion.div>
               );
@@ -141,16 +141,16 @@ const QuizComponent = ({ questions }) => {
             <motion.div
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
-              className={`mt-6 p-4 rounded-lg ${
+              className={`mt-4 sm:mt-6 p-3 sm:p-4 rounded-lg ${
                 selectedAnswer === question.correctAnswer
                   ? 'bg-green-50 border-2 border-green-500'
                   : 'bg-red-50 border-2 border-red-500'
               }`}
             >
-              <p className="font-semibold text-lg mb-2">
+              <p className="font-semibold text-base sm:text-lg mb-2">
                 {selectedAnswer === question.correctAnswer ? '✅ Chính xác!' : '❌ Sai rồi!'}
               </p>
-              <p className="text-gray-700">{question.explanation}</p>
+              <p className="text-sm sm:text-base text-gray-700 break-words">{question.explanation}</p>
             </motion.div>
           )}
         </motion.div>

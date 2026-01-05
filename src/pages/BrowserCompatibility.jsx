@@ -372,16 +372,16 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
     };
     const Icon = icons[browser];
     return (
-      <div className="flex items-center space-x-2">
-        <Icon className={colors[browser]} />
-        <span className="text-sm font-semibold">{version}</span>
+      <div className="flex items-center space-x-1 sm:space-x-2">
+        <Icon className={`${colors[browser]} text-base sm:text-lg`} />
+        <span className="text-xs sm:text-sm font-semibold break-words">{version}</span>
       </div>
     );
   };
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-6">
+    <div className="max-w-6xl mx-auto px-2 sm:px-4">
+      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-4 sm:mb-6 text-sm sm:text-base">
         <FaArrowLeft />
         <span>Về trang chủ</span>
       </Link>
@@ -389,20 +389,20 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12"
       >
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-purple-600 via-pink-600 to-red-600 bg-clip-text text-transparent mb-3 sm:mb-4 px-2">
           Browser Compatibility Guide
         </h1>
-        <p className="text-xl text-gray-600 mb-2">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-600 mb-2 px-4">
           Tìm hiểu các JavaScript functions tương thích với trình duyệt từ năm nào
         </p>
-        <p className="text-lg text-gray-500">
+        <p className="text-sm sm:text-base lg:text-lg text-gray-500 px-4">
           Hỗ trợ Chrome, Firefox, Safari, Edge
         </p>
         
-        <Link to="/quiz/browser-compatibility" className="inline-block mt-6">
-          <button className="btn-primary flex items-center space-x-2 mx-auto">
+        <Link to="/quiz/browser-compatibility" className="inline-block mt-4 sm:mt-6">
+          <button className="btn-primary flex items-center space-x-2 mx-auto text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
             <FaQuestionCircle />
             <span>Làm bài quiz</span>
           </button>
@@ -413,10 +413,10 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="card bg-gradient-to-r from-purple-500 to-pink-600 text-white mb-8"
+        className="card bg-gradient-to-r from-purple-500 to-pink-600 text-white mb-6 sm:mb-8 p-4 sm:p-6"
       >
-        <h2 className="text-2xl font-bold mb-4">📊 Lưu ý quan trọng</h2>
-        <ul className="space-y-2 text-purple-50">
+        <h2 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4">📊 Lưu ý quan trọng</h2>
+        <ul className="space-y-2 text-purple-50 text-sm sm:text-base">
           <li>• Các năm được liệt kê là năm tính năng được hỗ trợ chính thức</li>
           <li>• Một số tính năng có thể được hỗ trợ sớm hơn trong các bản beta</li>
           <li>• Để kiểm tra tương thích chi tiết, sử dụng <a href="https://caniuse.com" target="_blank" rel="noopener noreferrer" className="underline font-bold">caniuse.com</a></li>
@@ -425,7 +425,7 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
       </motion.div>
 
       {/* Compatibility Cards */}
-      <div className="space-y-6">
+      <div className="space-y-4 sm:space-y-6">
         {compatibilityData.map((item, index) => (
           <motion.div
             key={item.feature}
@@ -434,30 +434,30 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
             transition={{ delay: index * 0.05 }}
             className="card hover:shadow-2xl transition-all duration-300"
           >
-            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+            <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-3 sm:mb-4">
               <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                <h3 className="text-xl sm:text-2xl font-bold text-gray-800 mb-2">
                   {item.feature}
                 </h3>
                 <div className="flex flex-wrap gap-2 mb-2">
-                  <span className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-gradient-to-r from-purple-500 to-pink-600 text-white px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                     {item.esVersion}
                   </span>
-                  <span className="bg-gray-200 text-gray-700 px-3 py-1 rounded-full text-sm font-semibold">
+                  <span className="bg-gray-200 text-gray-700 px-2 sm:px-3 py-1 rounded-full text-xs sm:text-sm font-semibold">
                     Năm: {item.year}
                   </span>
                 </div>
               </div>
             </div>
 
-            <p className="text-gray-600 mb-4">{item.description}</p>
+            <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">{item.description}</p>
 
             {/* Browser Support */}
-            <div className="bg-gray-50 rounded-lg p-4 mb-4">
-              <h4 className="font-bold text-gray-800 mb-3 flex items-center space-x-2">
+            <div className="bg-gray-50 rounded-lg p-3 sm:p-4 mb-3 sm:mb-4">
+              <h4 className="font-bold text-gray-800 mb-2 sm:mb-3 flex items-center space-x-2 text-sm sm:text-base">
                 <span>🌐 Hỗ trợ trình duyệt:</span>
               </h4>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 sm:gap-4">
                 <BrowserIcon browser="chrome" version={item.browsers.chrome} />
                 <BrowserIcon browser="firefox" version={item.browsers.firefox} />
                 <BrowserIcon browser="safari" version={item.browsers.safari} />
@@ -478,35 +478,35 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.8 }}
-        className="card mt-8"
+        className="card mt-6 sm:mt-8"
       >
-        <h2 className="text-3xl font-bold text-gray-800 mb-6 text-center">
+        <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6 text-center px-2">
           📋 Bảng tóm tắt tương thích
         </h2>
         
-        <div className="overflow-x-auto">
-          <table className="w-full border-collapse">
+        <div className="overflow-x-auto -mx-2 sm:mx-0">
+          <table className="w-full border-collapse min-w-[700px]">
             <thead>
               <tr className="bg-gradient-to-r from-purple-500 to-pink-600 text-white">
-                <th className="border p-3 text-left">Tính năng</th>
-                <th className="border p-3 text-left">ES Version</th>
-                <th className="border p-3 text-left">Năm</th>
-                <th className="border p-3 text-left">Chrome</th>
-                <th className="border p-3 text-left">Firefox</th>
-                <th className="border p-3 text-left">Safari</th>
-                <th className="border p-3 text-left">Edge</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Tính năng</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">ES Version</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Năm</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Chrome</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Firefox</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Safari</th>
+                <th className="border p-2 sm:p-3 text-left text-xs sm:text-sm">Edge</th>
               </tr>
             </thead>
             <tbody>
               {compatibilityData.map((item, idx) => (
                 <tr key={idx} className={idx % 2 === 0 ? "bg-white" : "bg-gray-50"}>
-                  <td className="border p-3 font-semibold">{item.feature}</td>
-                  <td className="border p-3">{item.esVersion}</td>
-                  <td className="border p-3">{item.year}</td>
-                  <td className="border p-3 text-sm">{item.browsers.chrome}</td>
-                  <td className="border p-3 text-sm">{item.browsers.firefox}</td>
-                  <td className="border p-3 text-sm">{item.browsers.safari}</td>
-                  <td className="border p-3 text-sm">{item.browsers.edge}</td>
+                  <td className="border p-2 sm:p-3 font-semibold text-xs sm:text-sm">{item.feature}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.esVersion}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.year}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.browsers.chrome}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.browsers.firefox}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.browsers.safari}</td>
+                  <td className="border p-2 sm:p-3 text-xs sm:text-sm">{item.browsers.edge}</td>
                 </tr>
               ))}
             </tbody>
@@ -519,12 +519,12 @@ arr.toSpliced(1, 2, 10); // [3, 10, 1, 5] (arr không đổi)`
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.9 }}
-        className="card bg-gradient-to-r from-purple-500 via-pink-600 to-red-500 text-white text-center mt-8"
+        className="card bg-gradient-to-r from-purple-500 via-pink-600 to-red-500 text-white text-center mt-6 sm:mt-8 p-6 sm:p-8"
       >
-        <h3 className="text-3xl font-bold mb-4">Đã hiểu rõ về browser compatibility?</h3>
-        <p className="text-xl mb-6">Làm bài quiz để kiểm tra kiến thức của bạn!</p>
+        <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">Đã hiểu rõ về browser compatibility?</h3>
+        <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6">Làm bài quiz để kiểm tra kiến thức của bạn!</p>
         <Link to="/quiz/browser-compatibility">
-          <button className="bg-white text-purple-600 px-8 py-4 rounded-lg font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+          <button className="bg-white text-purple-600 px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-base sm:text-lg lg:text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
             Bắt đầu Quiz ngay
           </button>
         </Link>

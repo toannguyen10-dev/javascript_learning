@@ -36,8 +36,8 @@ const Bundling = () => {
   ];
 
   return (
-    <div className="max-w-6xl mx-auto">
-      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-6">
+    <div className="max-w-6xl mx-auto px-2 sm:px-4">
+      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-4 sm:mb-6 text-sm sm:text-base">
         <FaArrowLeft />
         <span>Về trang chủ</span>
       </Link>
@@ -45,12 +45,12 @@ const Bundling = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12"
       >
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-green-500 via-teal-500 to-cyan-500 bg-clip-text text-transparent mb-3 sm:mb-4 px-2">
           Bundling & Setup
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4">
           Học cách setup và sử dụng bundler để tối ưu dự án JavaScript
         </p>
         
@@ -70,7 +70,7 @@ const Bundling = () => {
           transition={{ delay: 0.1 }}
           className="card"
         >
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">1. Khái niệm Bundle</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">1. Khái niệm Bundle</h2>
           <p className="text-gray-700 mb-4 leading-relaxed text-lg">
             <strong>Bundle</strong> là quá trình gộp nhiều file JavaScript (và đôi khi CSS, hình ảnh, assets) 
             thành một hoặc vài file duy nhất.
@@ -80,10 +80,10 @@ const Bundling = () => {
           </p>
 
           <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white rounded-lg p-6 mb-4">
-            <h3 className="text-2xl font-bold mb-4">Tại sao cần bundling?</h3>
+            <h3 className="text-lg sm:text-xl lg:text-2xl font-bold mb-3 sm:mb-4">Tại sao cần bundling?</h3>
             <ul className="space-y-3 text-lg">
               <li className="flex items-start">
-                <span className="mr-3 text-2xl">🚀</span>
+                <span className="mr-3 text-xl sm:text-2xl">🚀</span>
                 <div>
                   <strong>Giảm HTTP requests:</strong> Trình duyệt chỉ load 1 file thay vì 10-20 file
                 </div>
@@ -140,7 +140,7 @@ dist/
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <div className="bg-blue-50 rounded-lg p-4 border-l-4 border-blue-500">
               <div className="flex items-center mb-2">
-                <span className="text-3xl mr-3">1️⃣</span>
+                <span className="text-2xl sm:text-3xl mr-3">1️⃣</span>
                 <h4 className="font-bold text-gray-800">Entry point</h4>
               </div>
               <p className="text-gray-600 text-sm">Bắt đầu từ 1 file chính (ví dụ index.js)</p>
@@ -188,7 +188,7 @@ dist/
           </div>
 
           <div className="bg-gray-800 text-white rounded-lg p-6">
-            <h4 className="font-semibold text-xl mb-4 text-center">Sơ đồ cơ chế bundler</h4>
+            <h4 className="font-semibold text-base sm:text-lg lg:text-xl mb-3 sm:mb-4 text-center">Sơ đồ cơ chế bundler</h4>
             <pre className="text-center text-sm overflow-x-auto">
 {`[src/index.js] → [parse imports] → [dependency graph]
       ↓
@@ -206,13 +206,13 @@ dist/
           transition={{ delay: 0.3 }}
           className="card"
         >
-          <h2 className="text-3xl font-bold text-gray-800 mb-6">3. Các bundler phổ biến</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-4 sm:mb-6">3. Các bundler phổ biến</h2>
           
           <div className="grid md:grid-cols-2 gap-6">
             {bundlers.map((bundler, idx) => (
               <div key={idx} className="bg-white border-2 border-gray-200 rounded-xl p-6 hover:shadow-lg transition-shadow">
                 <div className={`inline-block bg-gradient-to-r ${bundler.color} text-white px-4 py-2 rounded-full font-bold mb-3`}>
-                  <span className="text-2xl mr-2">{bundler.icon}</span>
+                  <span className="text-xl sm:text-2xl mr-2">{bundler.icon}</span>
                   {bundler.name}
                 </div>
                 <div className="space-y-2">

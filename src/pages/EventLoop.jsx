@@ -5,8 +5,8 @@ import { FaQuestionCircle, FaArrowLeft } from 'react-icons/fa';
 
 const EventLoop = () => {
   return (
-    <div className="max-w-5xl mx-auto">
-      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-6">
+    <div className="max-w-5xl mx-auto px-2 sm:px-4">
+      <Link to="/" className="inline-flex items-center space-x-2 text-blue-600 hover:text-blue-700 mb-4 sm:mb-6 text-sm sm:text-base">
         <FaArrowLeft />
         <span>Về trang chủ</span>
       </Link>
@@ -14,24 +14,24 @@ const EventLoop = () => {
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
-        className="text-center mb-12"
+        className="text-center mb-8 sm:mb-12"
       >
-        <h1 className="text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent mb-3 sm:mb-4 px-2">
           Event Loop & Async JavaScript
         </h1>
-        <p className="text-xl text-gray-600">
+        <p className="text-base sm:text-lg lg:text-xl text-gray-600 px-4">
           Hiểu sâu về cơ chế hoạt động bất đồng bộ trong JavaScript
         </p>
         
-        <Link to="/quiz/event-loop" className="inline-block mt-6">
-          <button className="btn-primary flex items-center space-x-2">
+        <Link to="/quiz/event-loop" className="inline-block mt-4 sm:mt-6">
+          <button className="btn-primary flex items-center space-x-2 text-sm sm:text-base px-4 sm:px-6 py-2 sm:py-3">
             <FaQuestionCircle />
             <span>Làm bài quiz</span>
           </button>
         </Link>
       </motion.div>
 
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         {/* Section 1 */}
         <motion.div
           initial={{ opacity: 0, x: -20 }}
@@ -39,7 +39,7 @@ const EventLoop = () => {
           transition={{ delay: 0.1 }}
           className="card"
         >
-          <h2 className="text-3xl font-bold text-gray-800 mb-4">1. JavaScript là Single-threaded</h2>
+          <h2 className="text-xl sm:text-2xl lg:text-3xl font-bold text-gray-800 mb-3 sm:mb-4">1. JavaScript là Single-threaded</h2>
           <p className="text-gray-700 mb-4 leading-relaxed">
             JS chạy trên một luồng duy nhất (main thread). Điều này có nghĩa là một lúc chỉ thực thi một lệnh.
           </p>
@@ -128,7 +128,7 @@ second();`}
             JS có thể xử lý asynchronous tasks nhờ Web APIs và Event Loop.
           </p>
 
-          <h3 className="text-2xl font-semibold text-gray-800 mb-3">3.1 Macro-task (Task Queue)</h3>
+          <h3 className="text-lg sm:text-xl lg:text-2xl font-semibold text-gray-800 mb-2 sm:mb-3">3.1 Macro-task (Task Queue)</h3>
           <p className="text-gray-700 mb-2">Bao gồm: setTimeout, setInterval, setImmediate, I/O events</p>
 
           <CodeBlock
@@ -246,7 +246,7 @@ console.log("C");`}
             <h4 className="font-bold text-yellow-900 text-center text-xl mb-2">
               ⚡ Công thức vàng ⚡
             </h4>
-            <p className="text-center text-2xl font-bold text-yellow-900">
+            <p className="text-center text-lg sm:text-xl lg:text-2xl font-bold text-yellow-900">
               Call Stack → Micro-task → Macro-task → Lặp lại
             </p>
           </div>
@@ -339,8 +339,8 @@ console.log("End");`}
               </li>
             </ol>
             <div className="mt-4 p-4 bg-white/20 rounded-lg">
-              <p className="font-bold text-xl">Kết quả cuối cùng:</p>
-              <p className="text-2xl font-bold mt-2">
+              <p className="font-bold text-base sm:text-lg lg:text-xl">Kết quả cuối cùng:</p>
+              <p className="text-lg sm:text-xl lg:text-2xl font-bold mt-2">
                 Start → End → Promise1 → Promise2 → setTimeout1 → setTimeout2
               </p>
             </div>
@@ -354,8 +354,8 @@ console.log("End");`}
           transition={{ delay: 0.8 }}
           className="card bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center"
         >
-          <h3 className="text-3xl font-bold mb-4">Sẵn sàng kiểm tra kiến thức?</h3>
-          <p className="text-xl mb-6">Làm bài quiz để xem bạn đã nắm vững chưa!</p>
+          <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 sm:mb-4">Sẵn sàng kiểm tra kiến thức?</h3>
+          <p className="text-base sm:text-lg lg:text-xl mb-4 sm:mb-6">Làm bài quiz để xem bạn đã nắm vững chưa!</p>
           <Link to="/quiz/event-loop">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-bold text-xl hover:bg-gray-100 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
               Bắt đầu Quiz ngay

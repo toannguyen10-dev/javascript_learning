@@ -10,32 +10,32 @@ const Home = () => {
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
-        className="text-center mb-16"
+        className="text-center mb-8 sm:mb-12 lg:mb-16"
       >
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent mb-4 sm:mb-6 px-2">
           Học JavaScript Chuyên Sâu
         </h1>
-        <p className="text-2xl text-gray-600 mb-4">
+        <p className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-4 px-4">
           Từ cơ bản đến nâng cao - Nắm vững kiến thức JavaScript hiện đại
         </p>
-        <div className="flex items-center justify-center space-x-8 mt-8">
+        <div className="flex items-center justify-center space-x-4 sm:space-x-6 lg:space-x-8 mt-6 sm:mt-8">
           <div className="text-center">
-            <div className="text-4xl font-bold text-blue-600">4</div>
-            <div className="text-gray-600">Modules</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-blue-600">4</div>
+            <div className="text-xs sm:text-sm text-gray-600">Modules</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-green-600">60+</div>
-            <div className="text-gray-600">Bài tập</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-green-600">60+</div>
+            <div className="text-xs sm:text-sm text-gray-600">Bài tập</div>
           </div>
           <div className="text-center">
-            <div className="text-4xl font-bold text-purple-600">100%</div>
-            <div className="text-gray-600">Miễn phí</div>
+            <div className="text-2xl sm:text-3xl lg:text-4xl font-bold text-purple-600">100%</div>
+            <div className="text-xs sm:text-sm text-gray-600">Miễn phí</div>
           </div>
         </div>
       </motion.div>
 
       {/* Modules */}
-      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:gap-8 mb-8 sm:mb-12">
         <ModuleCard
           icon={FaCode}
           title="Event Loop & Async"
@@ -82,30 +82,30 @@ const Home = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.6, delay: 0.4 }}
-        className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-3xl p-12 text-white"
+        className="bg-gradient-to-r from-blue-500 to-indigo-600 rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 text-white"
       >
-        <div className="flex items-center justify-center mb-6">
-          <FaRocket className="text-6xl" />
+        <div className="flex items-center justify-center mb-4 sm:mb-6">
+          <FaRocket className="text-4xl sm:text-5xl lg:text-6xl" />
         </div>
-        <h2 className="text-4xl font-bold text-center mb-6">
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center mb-4 sm:mb-6">
           Tại sao nên học tại đây?
         </h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8">
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-3">📚 Nội dung chất lượng</h3>
-            <p className="text-blue-100">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">📚 Nội dung chất lượng</h3>
+            <p className="text-sm sm:text-base text-blue-100">
               Kiến thức được tổng hợp từ tài liệu chính thức và kinh nghiệm thực tế
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-3">✅ Bài tập thực hành</h3>
-            <p className="text-blue-100">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">✅ Bài tập thực hành</h3>
+            <p className="text-sm sm:text-base text-blue-100">
               Hệ thống quiz giúp củng cố kiến thức và đánh giá tiến độ học tập
             </p>
           </div>
           <div className="text-center">
-            <h3 className="text-2xl font-semibold mb-3">🎯 Học từng bước</h3>
-            <p className="text-blue-100">
+            <h3 className="text-xl sm:text-2xl font-semibold mb-2 sm:mb-3">🎯 Học từng bước</h3>
+            <p className="text-sm sm:text-base text-blue-100">
               Nội dung được sắp xếp logic từ cơ bản đến nâng cao
             </p>
           </div>
